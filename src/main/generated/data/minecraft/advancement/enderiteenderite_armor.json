@@ -1,0 +1,46 @@
+{
+  "parent": "minecraft:enderiteget_enderite_ingot",
+  "criteria": {
+    "full_enderite_armor": {
+      "conditions": {
+        "items": [
+          {
+            "items": "enderite:enderite_helmet"
+          },
+          {
+            "items": "enderite:enderite_chestplate"
+          },
+          {
+            "items": "enderite:enderite_leggings"
+          },
+          {
+            "items": "enderite:enderite_boots"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    }
+  },
+  "display": {
+    "description": {
+      "translate": "advancements.enderite.enderite_armor.description"
+    },
+    "frame": "challenge",
+    "icon": {
+      "count": 1,
+      "id": "enderite:enderite_chestplate"
+    },
+    "title": {
+      "translate": "advancements.enderite.enderite_armor.title"
+    }
+  },
+  "requirements": [
+    [
+      "full_enderite_armor"
+    ]
+  ],
+  "rewards": {
+    "experience": 200
+  },
+  "sends_telemetry_event": true
+}

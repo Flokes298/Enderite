@@ -1,0 +1,9 @@
+{
+  "type": "minecraft:smithing_transform",
+  "addition": "#enderite:enderite_tool_material",
+  "base": "minecraft:netherite_chestplate",
+  "result": {
+    "id": "enderite:enderite_chestplate"
+  },
+  "template": "enderite:enderite_upgrade_smithing_template"
+}

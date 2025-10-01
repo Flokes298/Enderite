@@ -1,0 +1,11 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    "enderite:raw_enderite"
+  ],
+  "result": {
+    "count": 9,
+    "id": "enderite:enderite_shard"
+  }
+}

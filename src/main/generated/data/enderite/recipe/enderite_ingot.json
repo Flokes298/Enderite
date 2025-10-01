@@ -1,0 +1,11 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    "enderite:enderite_block"
+  ],
+  "result": {
+    "count": 9,
+    "id": "enderite:enderite_ingot"
+  }
+}

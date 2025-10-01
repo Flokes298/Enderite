@@ -1,0 +1,33 @@
+{
+  "parent": "minecraft:enderiteroot",
+  "criteria": {
+    "got_enderite_shard": {
+      "conditions": {
+        "items": [
+          {
+            "items": "enderite:enderite_shard"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    }
+  },
+  "display": {
+    "description": {
+      "translate": "advancements.enderite.get_enderite_shard.description"
+    },
+    "icon": {
+      "count": 1,
+      "id": "enderite:enderite_shard"
+    },
+    "title": {
+      "translate": "advancements.enderite.get_enderite_shard.title"
+    }
+  },
+  "requirements": [
+    [
+      "got_enderite_shard"
+    ]
+  ],
+  "sends_telemetry_event": true
+}

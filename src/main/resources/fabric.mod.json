@@ -1,0 +1,49 @@
+{
+	"schemaVersion": 1,
+	"id": "enderite",
+	"version": "${version}",
+	"name": "Enderite",
+	"description": "New Enderite Resource found in the End Dimension",
+	"authors": [
+		"Flokes_"
+	],
+	"contact": {
+		"homepage": "https://fabricmc.net/",
+		"sources": "https://github.com/FabricMC/fabric-example-mod"
+	},
+	"license": "CC0-1.0",
+	"icon": "assets/enderite/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+			"net.flokes.enderite.Enderite",
+            "net.flokes.enderite.item.ModItems",
+            "net.flokes.enderite.block.ModBlocks",
+            "net.flokes.enderite.world.gen.feature.ModConfiguredFeatures",
+            "net.flokes.enderite.world.gen.feature.ModFeatures",
+            "net.flokes.enderite.world.gen.feature.ModPlacedFeatures"
+		],
+		"client": [
+			"net.flokes.enderite.EnderiteClient"
+		],
+		"fabric-datagen": [
+			"net.flokes.enderite.EnderiteDataGenerator"
+		]
+	},
+	"mixins": [
+		"enderite.mixins.json",
+		{
+			"config": "enderite.client.mixins.json",
+			"environment": "client"
+		}
+	],
+	"depends": {
+		"fabricloader": ">=0.17.2",
+		"minecraft": "~1.21.8",
+		"java": ">=21",
+		"fabric-api": "*"
+	},
+	"suggests": {
+		"another-mod": "*"
+	}
+}

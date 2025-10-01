@@ -1,0 +1,49 @@
+{
+  "parent": "minecraft:enderiteget_enderite_ingot",
+  "criteria": {
+    "all_enderite_tools": {
+      "conditions": {
+        "items": [
+          {
+            "items": "enderite:enderite_sword"
+          },
+          {
+            "items": "enderite:enderite_pickaxe"
+          },
+          {
+            "items": "enderite:enderite_axe"
+          },
+          {
+            "items": "enderite:enderite_shovel"
+          },
+          {
+            "items": "enderite:enderite_hoe"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    }
+  },
+  "display": {
+    "description": {
+      "translate": "advancements.enderite.enderite_tools.description"
+    },
+    "frame": "challenge",
+    "icon": {
+      "count": 1,
+      "id": "enderite:enderite_pickaxe"
+    },
+    "title": {
+      "translate": "advancements.enderite.enderite_tools.title"
+    }
+  },
+  "requirements": [
+    [
+      "all_enderite_tools"
+    ]
+  ],
+  "rewards": {
+    "experience": 200
+  },
+  "sends_telemetry_event": true
+}
