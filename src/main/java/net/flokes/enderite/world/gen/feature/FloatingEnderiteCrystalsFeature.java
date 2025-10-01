@@ -43,7 +43,7 @@ public class FloatingEnderiteCrystalsFeature extends Feature<DefaultFeatureConfi
 
         Direction[] directions = {Direction.UP, Direction.DOWN, Direction.NORTH, Direction.EAST, Direction.SOUTH, Direction.WEST};
         for (Direction direction : directions) {
-            if (random.nextInt(1) > 0) {
+            if (random.nextInt(2) > 0) {
                 this.setBlockState(structureWorldAccess, blockPos.offset(direction), ModBlocks.ENDERITE_ORE.getDefaultState());
             }
         }
