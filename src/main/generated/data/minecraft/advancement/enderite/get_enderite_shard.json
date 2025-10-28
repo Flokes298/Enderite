@@ -1,4 +1,5 @@
 {
+  "parent": "minecraft:enderite/root",
   "criteria": {
     "got_enderite_shard": {
       "conditions": {
@@ -12,18 +13,15 @@
     }
   },
   "display": {
-    "announce_to_chat": false,
-    "background": "minecraft:gui/advancements/backgrounds/end",
     "description": {
-      "translate": "advancements.enderite.root.description"
+      "translate": "advancements.enderite.get_enderite_shard.description"
     },
     "icon": {
       "count": 1,
       "id": "enderite:enderite_shard"
     },
-    "show_toast": false,
     "title": {
-      "translate": "advancements.enderite.root.title"
+      "translate": "advancements.enderite.get_enderite_shard.title"
     }
   },
   "requirements": [

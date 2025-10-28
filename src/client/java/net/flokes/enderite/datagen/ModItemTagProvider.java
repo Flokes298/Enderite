@@ -34,11 +34,17 @@ public class ModItemTagProvider extends FabricTagProvider.ItemTagProvider {
         valueLookupBuilder(ItemTags.HOES)
                 .add(ModItems.ENDERITE_HOE);
 
-        valueLookupBuilder(ItemTags.TRIMMABLE_ARMOR)
-                .add(ModItems.ENDERITE_HELMET)
-                .add(ModItems.ENDERITE_CHESTPLATE)
-                .add(ModItems.ENDERITE_LEGGINGS)
+        valueLookupBuilder(ItemTags.HEAD_ARMOR)
+                .add(ModItems.ENDERITE_HELMET);
+        valueLookupBuilder(ItemTags.CHEST_ARMOR)
+                .add(ModItems.ENDERITE_CHESTPLATE);
+        valueLookupBuilder(ItemTags.LEG_ARMOR)
+                .add(ModItems.ENDERITE_LEGGINGS);
+        valueLookupBuilder(ItemTags.FOOT_ARMOR)
                 .add(ModItems.ENDERITE_BOOTS);
+
+        valueLookupBuilder(ItemTags.GAZE_DISGUISE_EQUIPMENT)
+                .add(ModItems.ENDERITE_HELMET);
 
         valueLookupBuilder(ItemTags.TRIM_MATERIALS)
                 .add(ModItems.ENDERITE_INGOT);

@@ -21,6 +21,10 @@ public class ModBlockTagProvider extends FabricTagProvider.BlockTagProvider {
         valueLookupBuilder(BlockTags.BEACON_BASE_BLOCKS)
                 .add(ModBlocks.ENDERITE_BLOCK);
 
+        valueLookupBuilder(BlockTags.DRAGON_IMMUNE)
+                .add(ModBlocks.ENDERITE_ORE)
+                .add(ModBlocks.ENDERITE_BLOCK);
+
         valueLookupBuilder(ModTags.Blocks.NEEDS_NETHERITE_TOOL)
                 .add(ModBlocks.ENDERITE_BLOCK)
                 .add(ModBlocks.ENDERITE_ORE);
@@ -31,6 +35,7 @@ public class ModBlockTagProvider extends FabricTagProvider.BlockTagProvider {
                 .addTag(ModTags.Blocks.NEEDS_NETHERITE_TOOL);
         valueLookupBuilder(BlockTags.INCORRECT_FOR_STONE_TOOL)
                 .addTag(ModTags.Blocks.NEEDS_NETHERITE_TOOL);
+        // TODO: INCORRECT FOR COPPER TOOLS
         valueLookupBuilder(BlockTags.INCORRECT_FOR_IRON_TOOL)
                 .addTag(ModTags.Blocks.NEEDS_NETHERITE_TOOL);
         valueLookupBuilder(BlockTags.INCORRECT_FOR_DIAMOND_TOOL)

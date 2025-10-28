@@ -1,5 +1,5 @@
 {
-  "parent": "minecraft:enderiteget_enderite_ingot",
+  "parent": "minecraft:enderite/get_enderite_ingot",
   "criteria": {
     "full_enderite_armor": {
       "conditions": {
