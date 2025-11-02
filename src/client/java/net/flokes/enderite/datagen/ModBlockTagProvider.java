@@ -2,6 +2,7 @@ package net.flokes.enderite.datagen;
 
 import net.fabricmc.fabric.api.datagen.v1.FabricDataOutput;
 import net.fabricmc.fabric.api.datagen.v1.provider.FabricTagProvider;
+import net.fabricmc.fabric.api.tag.convention.v2.ConventionalBlockTags;
 import net.flokes.enderite.block.ModBlocks;
 import net.flokes.enderite.util.ModTags;
 import net.minecraft.registry.RegistryWrapper;
@@ -17,6 +18,7 @@ public class ModBlockTagProvider extends FabricTagProvider.BlockTagProvider {
 
     @Override
     protected void configure(RegistryWrapper.WrapperLookup wrapperLookup) {
+        // --- Vanilla tags ---
 
         valueLookupBuilder(BlockTags.BEACON_BASE_BLOCKS)
                 .add(ModBlocks.ENDERITE_BLOCK);
@@ -43,6 +45,11 @@ public class ModBlockTagProvider extends FabricTagProvider.BlockTagProvider {
 
         valueLookupBuilder(BlockTags.PICKAXE_MINEABLE)
                 .add(ModBlocks.ENDERITE_BLOCK)
+                .add(ModBlocks.ENDERITE_ORE);
+
+        // --- Fabric conventional tags ---
+
+        valueLookupBuilder(ConventionalBlockTags.ORES)
                 .add(ModBlocks.ENDERITE_ORE);
     }
 }

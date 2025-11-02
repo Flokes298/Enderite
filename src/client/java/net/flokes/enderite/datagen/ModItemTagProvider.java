@@ -2,6 +2,8 @@ package net.flokes.enderite.datagen;
 
 import net.fabricmc.fabric.api.datagen.v1.FabricDataOutput;
 import net.fabricmc.fabric.api.datagen.v1.provider.FabricTagProvider;
+import net.fabricmc.fabric.api.tag.convention.v2.ConventionalItemTags;
+import net.flokes.enderite.block.ModBlocks;
 import net.flokes.enderite.item.ModItems;
 import net.flokes.enderite.util.ModTags;
 import net.minecraft.registry.*;
@@ -16,6 +18,7 @@ public class ModItemTagProvider extends FabricTagProvider.ItemTagProvider {
 
     @Override
     protected void configure(RegistryWrapper.WrapperLookup wrapperLookup) {
+        // --- Vanilla tags ---
 
         valueLookupBuilder(ModTags.Items.ENDERITE_TOOL_MATERIALS)
                 .add(ModItems.ENDERITE_INGOT);
@@ -48,5 +51,19 @@ public class ModItemTagProvider extends FabricTagProvider.ItemTagProvider {
 
         valueLookupBuilder(ItemTags.TRIM_MATERIALS)
                 .add(ModItems.ENDERITE_INGOT);
+
+        // --- Fabric conventional tags ---
+
+        valueLookupBuilder(ConventionalItemTags.GEMS)
+                .add(ModItems.ENDERITE_SHARD);
+
+        valueLookupBuilder(ConventionalItemTags.INGOTS)
+                .add(ModItems.ENDERITE_INGOT);
+
+        valueLookupBuilder(ConventionalItemTags.ORES)
+                .add(ModBlocks.ENDERITE_ORE.asItem());
+
+        valueLookupBuilder(ConventionalItemTags.RAW_MATERIALS)
+                .add(ModItems.RAW_ENDERITE);
     }
 }
